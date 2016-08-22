@@ -1,7 +1,7 @@
 sudo apt-get update
 sudo apt-get install -y build-essential zlib1g-dev libpcre3 libpcre3-dev unzip
 
-wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.39.tar.gz
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/zlib-1.2.8.tar.gz?raw=true
 tar -zxf pcre-8.39.tar.gz
 cd pcre-8.39
 ./configure
@@ -9,7 +9,7 @@ make
 sudo make install
 cd ../
 
-wget http://zlib.net/zlib-1.2.8.tar.gz
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/pcre-8.39.tar.gz?raw=true
 tar -zxf zlib-1.2.8.tar.gz
 cd zlib-1.2.8
 ./configure
@@ -17,7 +17,7 @@ make
 sudo make install
 cd ../
 
-wget http://www.openssl.org/source/openssl-1.0.2h.tar.gz
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/openssl-1.0.2h.tar.gz?raw=true
 tar -zxf openssl-1.0.2h.tar.gz
 cd openssl-1.0.2h
 patch -d . -p 1 < ../nginx_chacha.patch
@@ -27,14 +27,14 @@ sudo make install
 cd ../
 
 NPS_VERSION=1.11.33.3
-wget https://github.com/pagespeed/ngx_pagespeed/archive/release-${NPS_VERSION}-beta.zip -O release-${NPS_VERSION}-beta.zip
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/release-1.11.33.3-beta.zip?raw=true
 unzip release-${NPS_VERSION}-beta.zip
 cd ngx_pagespeed-release-${NPS_VERSION}-beta/
-wget https://dl.google.com/dl/page-speed/psol/${NPS_VERSION}.tar.gz
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/1.11.33.3.tar.gz?raw=true
 tar -xzvf ${NPS_VERSION}.tar.gz  # extracts to psol/
 cd ../
 
-wget http://nginx.org/download/nginx-1.9.7.tar.gz
+wget https://github.com/Jumbleberry/NginxSwarm/blob/master/nginx-1.9.7.tar.gz?raw=true
 tar -zxf nginx-1.9.7.tar.gz
 CURPATH=$(readlink -f . | sed -r 's/^.{1}//');
 cd nginx-1.9.7/
