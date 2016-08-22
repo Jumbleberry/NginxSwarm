@@ -14,8 +14,8 @@ sudo make install
 cd ../
 
 cd openssl-1.0.2h
-./config --prefix=/usr
 patch -d . -p 1 < ../nginx_chacha.patch
+./config --prefix=/usr
 make
 sudo make install
 cd ../
@@ -41,7 +41,6 @@ patch -d . -p 1 < ../nginx_http2_spdy.patch
 --with-stream \
 --with-http_spdy_module \
 --with-http_v2_module \
---with-http_ssl_module \
 --with-threads \
 --with-file-aio \
 --with-openssl=/root/openssl \
