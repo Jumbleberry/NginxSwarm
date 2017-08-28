@@ -5,3 +5,9 @@ pcre-8.39.tar.gz filter=lfs diff=lfs merge=lfs -text
 zlib-1.2.8.tar.gz filter=lfs diff=lfs merge=lfs -text
 release-1.11.33.3-beta.zip filter=lfs diff=lfs merge=lfs -text
 nginx-1.9.7.tar.gz filter=lfs diff=lfs merge=lfs -text
+v1.12.34.2-stable.zip filter=lfs diff=lfs merge=lfs -text
+zlib-1.2.11.tar.gz filter=lfs diff=lfs merge=lfs -text
+nginx-1.13.4.tar.gz filter=lfs diff=lfs merge=lfs -text
+openssl-1.0.2l.tar.gz filter=lfs diff=lfs merge=lfs -text
+1.12.34.2-x64.tar.gz filter=lfs diff=lfs merge=lfs -text
+pcre-8.41.tar.gz filter=lfs diff=lfs merge=lfs -text
